@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="weather.css" class="css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1>Real-Time Weather Search</h1>
+        <div class="container-search">
+            <input type="text" placeholder="Enter City here...">
+            <button>
+                <i class='bx bx-search'></i>
+            </button>
+        </div>
+
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <div class="container-unit">
+            <div class="container-city">
+                <div class="city">
+                    Bangkok
+                </div>
+                <img src="https://openweathermap.org/img/wn/01d@2x.png" class="icon">
+            </div>
+        </div>
+
+        <div class="container-temp">
+            <span class="temp">30°</span>
+            <p class="temp-condition">Sunny</p>
+        </div>
+
+        <div class="container-details">
+            <div class="item">
+                <span class="humidity">420</span>
+                <p>Humidity</p>
+            </div>
+            
+            <div class="item">
+                <span class="wind">1200</span>
+                <p>Wind</p>
+            </div>
+
+            <div class="item">
+                <span class="pressure">1024</span>
+                <p>Pressure</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="weather.js" defer></script>
+
+</body>
+</html>

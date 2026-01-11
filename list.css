@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 350px;
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.container h1{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.container-search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.container-search input{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid #dfdfdf;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.container-search input:focus{
+    border-color: #FF8C00;
+}
+
+.container-search input::placeholder{
+    font-size: 12px;
+    font-style: italic;
+}
+
+.container-search button{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: #FF8C00;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.container-search button:hover{
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    color: #000;
+    font-size: 14px;
+}
+
+.node-list{
+    list-style: none;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.liElement{
+    font-size: 14px;
+    font-style: italic;
+    color: #808080;
+    list-style-type: circle;
+    border-bottom: 1px solid #dfdfdf;
+    padding: 20px;
+}
+
+.divElement{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    align-items: center;
+}
+
+.complete-btn,
+.edit-btn,
+.delete-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.complete-btn{
+    background: linear-gradient(135deg, #00C853, #00B140);
+    color: #fff;
+}
+
+
+.edit-btn{
+    background: linear-gradient(135deg, #FFD54F, #FFC107);
+    color: #000;
+}
+
+
+.delete-btn{
+    background: linear-gradient(135deg, #FF5252, #D32F2F);
+    color: #fff;
+}
+
+.complete-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover, .container-search button{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+}
+
+.complete-btn:active,
+.edit-btn:active,
+.delete-btn:active, .container-search button {
+    transform: translateY(0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
