@@ -1,29 +1,39 @@
 # 🌦️ JavaScript Projects Collection
 
-A collection of beginner-friendly JavaScript projects built to practice **HTML, CSS, and JavaScript fundamentals**.
+A collection of modern, beginner-friendly **JavaScript projects** built to strengthen skills in **HTML, CSS, and JavaScript** through hands-on practice.
 
 ---
 
 ## 🚀 Projects Included
 
 ### ☁️ Weather App
-- Search weather by city name
-- Real-time data using **OpenWeatherMap API**
-- Dynamic weather icons
-- Error handling for invalid cities
-- Clean and responsive UI
+A simple and clean weather application that fetches real-time data using an external API.
 
-**Tech Stack:**  
+**Features**
+- Search weather by city name
+- Real-time weather data from **OpenWeatherMap API**
+- Dynamic weather condition icons
+- Displays temperature, humidity, wind speed, pressure, and clouds
+- Error handling for invalid city names
+- Responsive and modern UI
+
+**Tech Stack**  
 HTML • CSS • JavaScript • REST API
 
 ---
 
-### ✅ To-Do List
-- Add and delete tasks
-- Simple and clean UI
-- Beginner-friendly logic
+### ✅ To-Do List App
+A fully functional to-do list application with task management features.
 
-**Tech Stack:**  
+**Features**
+- ➕ Add new tasks
+- ✏️ Edit existing tasks
+- ❌ Delete tasks
+- ✔️ Mark tasks as completed
+- ~~Line-through effect~~ for completed tasks
+- Clean and user-friendly interface
+
+**Tech Stack**  
 HTML • CSS • JavaScript
 
 ---
