@@ -21,6 +21,9 @@
             for(let x=0;x<toDo.length;x++){
                 const liElement=document.createElement("li");
                 liElement.className="liElement";
+                if(toDo[x].isComplete){
+                    liElement.classList.add("completed");
+                }
                 
                 const spanElement=document.createElement("span");
                 spanElement.innerText=toDo[x].text;
@@ -30,15 +33,32 @@
 
                 const completeButton=document.createElement("button");
                 completeButton.className="complete-btn";
-                completeButton.innerText="Done";
+                completeButton.innerText=toDo[x].isComplete ? "Undo" : "Done"
+                completeButton.addEventListener("click",function(){
+                    toDo[x].isComplete=!toDo[x].isComplete;
+                    render();
+                })
 
                 const editButton=document.createElement("button");
                 editButton.className="edit-btn";
                 editButton.innerText="edit";
 
+                editButton.addEventListener("click",function(){
+                    const newText=prompt("Edit task",toDo[x].text);
+                    if(newText.trim() !==""){
+                        toDo[x].text=newText;
+                        render();
+                    }
+                })
+
                 const deleteButton=document.createElement("button");
                 deleteButton.className="delete-btn";
                 deleteButton.innerText="Delete";
+
+                deleteButton.addEventListener("click",function(){
+                    toDo.splice(x,1);
+                    render();
+                })
 
                 liElement.appendChild(spanElement);
                 divElement.appendChild(completeButton);

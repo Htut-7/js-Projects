@@ -91,6 +91,11 @@ body{
     padding: 20px;
 }
 
+.liElement.completed span{
+    text-decoration: line-through;
+    color: #888;
+}
+
 .divElement{
     display: flex;
     justify-content: space-around;
